@@ -1,14 +1,11 @@
 import { storageInfo } from './addandremove.js';
 
 export function cleartasksDone(e) {
-  const store = [];
   let tempStore = storageInfo();
-  tempStore.forEach((data) => {
-    if (data.completed === false) {
-      store.push(data);
-    }
-  });
-  localStorage.setItem('TasksInfo', JSON.stringify(store));
+  const updatedTasks = tempStore.filter(data => !data.completed);
+
+  localStorage.setItem('TasksInfo', JSON.stringify(updatedTasks));
+
   tempStore = storageInfo();
   let Q = 1;
   for (let i = 0; i < tempStore.length; i += 1) {
@@ -33,6 +30,7 @@ export function cleartasksDone(e) {
     listHolder[i].children[0].children[1].id = tempStore[i].id;
   }
 }
+
 export function checkBoxclicked(e) {
   const checkBox = e.target.parentElement.parentElement.children[0].children[0];
   const checkStatus = e.target.parentElement.parentElement.children[0].children[1];

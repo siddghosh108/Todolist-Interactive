@@ -23,7 +23,6 @@
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -128,16 +127,6 @@ To run tests, run the following command:
 
 - [ ] **[Project: To-do-list]**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
