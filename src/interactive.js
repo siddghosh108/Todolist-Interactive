@@ -2,7 +2,7 @@ import { storageInfo } from './addandremove.js';
 
 export function cleartasksDone(e) {
   let tempStore = storageInfo();
-  const updatedTasks = tempStore.filter((data) => !data.completed); // Added parentheses around "data"
+  const updatedTasks = tempStore.filter((data) => !data.completed);
 
   localStorage.setItem('TasksInfo', JSON.stringify(updatedTasks));
 
